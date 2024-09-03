@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <select class="select-sign">
+            <option>Select a sign (default - O)</option>
+            <option value="o">O - default</option>
+            <option value="x">X</option>
+        </select>
+        <div class="settings-btns">
+            <button id="start-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        <div class="playground">
+            <div class="board">
+                <button class="board-btns" id="btn-one"></button>
+                <button class="board-btns" id="btn-two"></button>
+                <button class="board-btns" id="btn-three"></button>
+                <button class="board-btns" id="btn-four"></button>
+                <button class="board-btns" id="btn-five"></button>
+                <button class="board-btns" id="btn-six"></button>
+                <button class="board-btns" id="btn-seven"></button>
+                <button class="board-btns" id="btn-eight"></button>
+                <button class="board-btns" id="btn-nine"></button>
+            </div>
+            <div class="winner">
+                <label id="winner-lbl"></label>
+            </div>
+        </div>        
+    </div>
+
+    <script src="first_js.js"></script>
+</body>
+</html>
