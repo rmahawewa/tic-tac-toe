@@ -10,30 +10,32 @@
     
     <div class="container">
         <h1>Tic Tac Toe</h1>
-        <select class="select-sign">
-            <option>Select a sign (default - O)</option>
-            <option value="o">O - default</option>
-            <option value="x">X</option>
-        </select>
+        <div class="winner">
+            <label id="winner-lbl"></label>
+        </div>
+        
         <div class="settings-btns">
+            <select class="select-sign">
+                <option value="X">Select a sign (default - X)</option>
+                <option value="X">X - default</option>
+                <option value="O">O</option>
+            </select>
+
             <button id="start-btn">Start</button>
             <button id="reset-btn">Reset</button>
-        </div>
+        </div>        
         <div class="playground">
             <div class="board">
-                <button class="board-btns" id="btn-one"></button>
-                <button class="board-btns" id="btn-two"></button>
-                <button class="board-btns" id="btn-three"></button>
-                <button class="board-btns" id="btn-four"></button>
-                <button class="board-btns" id="btn-five"></button>
-                <button class="board-btns" id="btn-six"></button>
-                <button class="board-btns" id="btn-seven"></button>
-                <button class="board-btns" id="btn-eight"></button>
-                <button class="board-btns" id="btn-nine"></button>
-            </div>
-            <div class="winner">
-                <label id="winner-lbl"></label>
-            </div>
+                <button class="board-btns" id="btn-one" value="0"></button>
+                <button class="board-btns" id="btn-two" value="1"></button>
+                <button class="board-btns" id="btn-three" value="2"></button>
+                <button class="board-btns" id="btn-four" value="3"></button>
+                <button class="board-btns" id="btn-five" value="4"></button>
+                <button class="board-btns" id="btn-six" value="5"></button>
+                <button class="board-btns" id="btn-seven" value="6"></button>
+                <button class="board-btns" id="btn-eight" value="7"></button>
+                <button class="board-btns" id="btn-nine" value="8"></button>
+            </div>            
         </div>        
     </div>
 

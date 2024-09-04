@@ -6,7 +6,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+h1{
+    font-size: 4rem;
+    color: sienna;
 }
 
 .playground{
@@ -17,4 +24,63 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    border: 5px solid sienna;
+    padding: 5px;
 }
+
+.select-sign{
+    margin-bottom: 5rem;   
+    width: 15rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-btns{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.select-sign, .settings-btns button{
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.winner{
+    height: 3rem;
+}
+
+#winner-lbl{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: darkgreen;
+}
+
+#start-btn, #reset-btn{
+    width: 7rem;
+}
+
+.board-btns{
+    width: 7rem;
+    height: 7rem;
+    border: none;
+    background-color: darkgreen;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.board-btns:hover{
+    background-color: cadetblue;
+}
+
