@@ -35,7 +35,9 @@ let board_btns = document.querySelectorAll(".board-btns");
 board_btns.forEach((btn) => 
     btn.addEventListener("click", function(){
     const indx = btn.value;
-    if(player1.player_code !== undefined && count%2 === player_count && count < 9){
+    const btn_dsply = btn.innerHTML;
+    //alert(btn_dsply);
+    if(player1.player_code !== undefined && count%2 === player_count && count < 9 && btn_dsply.localeCompare("") === 0){
         gameBoard.add(indx, player1.mark);
         gameBoard.draw_board();
         count++;
