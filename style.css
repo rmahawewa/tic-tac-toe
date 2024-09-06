@@ -87,8 +87,7 @@ h1{
 .modal{
     display: flex;
     justify-content: center;
-    position: fixed;
-    z-index: 1;
+    position: fixed;    
     padding-top: 1rem;
     left: 0;
     top: 0;
@@ -140,5 +139,39 @@ h1{
 }
 
 #btn-get-usr:hover{
-    border: 2px solid sienna;
+    border: 2px solid white;
+}
+
+#msg{
+    height: 7.6rem;
+}
+
+#sign{
+    height:15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.symbol{
+    height: 3.5rem;
+    width: 3.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    background-color: sienna;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.symbol:hover{
+    border: 3px solid white;
+}
+
+#model-get-user, #model-get-sign, #message{
+    z-index: -10000;
+    opacity: 0;
 }
