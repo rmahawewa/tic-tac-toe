@@ -110,10 +110,38 @@ function player(player, sign){
     let mark = sign;
     let cnt = -1;
 
+    const click_start = () => {
+        const interface_get_user_name = update_element("#model-get-user");
+        interface_get_user_name.make_visible();
+    }
+
+    const focus_username_input = () => {
+        const user_name = update_element("#user-name");
+        user_name.make_focus();
+    }
+
+    const get_username_button_click = () => {
+        const user = update_element("#user-name").get_value();
+
+        user = user.localeCompare("") === 0?"player one":user;
+        const interface_select_symbol = update_element("model-get-sign");
+        interface_select_symbol.make_visible();
+        return user;
+    }
+
+    const get_user_symbol = () => {
+        let symbols = update_element(".symbol").get_element_group();
+        return symbols;
+    } 
+
     const get_player_data = () => {
         document.querySelector("#model-get-user").setAttribute("style","opacity: 1; z-index:1");
         let usr = document.querySelector("#user-name");
         usr.focus();     
+    }
+
+    const player_name = () => {
+
     }
 
     return {player_code, mark, cnt, get_player_data};
