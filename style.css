@@ -175,3 +175,7 @@ h1{
     z-index: -10000;
     opacity: 0;
 }
+
+.get-usr-info{
+    display: flex;
+}
