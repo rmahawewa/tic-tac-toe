@@ -36,6 +36,7 @@ get.addEventListener("click", function(){
         C2: "*",
         C3: "*",
     };
+    alert("Please open the console first");
     process();
 })
 
