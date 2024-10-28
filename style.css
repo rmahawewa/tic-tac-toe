@@ -40,7 +40,7 @@ h1{
 
 .settings-btns{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
